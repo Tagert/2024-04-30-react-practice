@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.container svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}

@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 3rem 2rem 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 40.5rem;
+
+    h2 {
+      font-size: 3.8rem;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.5;
+    }
+  }
+
+  .cardWrapper {
+    display: flex;
+    gap: 2rem;
+
+    .card {
+      width: 20rem;
+      height: 20rem;
+      background-color: aquamarine;
+    }
+  }
+
+  .cardContainer {
+    display: flex;
+    gap: 2rem;
+
+    .cardGroup {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .card {
+        width: 20rem;
+        height: 20rem;
+        background-color: aquamarine;
+      }
+    }
+
+    .cardHolder {
+      width: 42rem;
+      height: 42rem;
+      background-color: aquamarine;
+    }
+  }
+}

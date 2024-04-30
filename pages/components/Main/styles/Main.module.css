@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 3rem 2rem 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 40.5rem;
+}
+.container .description h2 {
+  font-size: 3.8rem;
+}
+.container .description p {
+  text-align: justify;
+  line-height: 1.5;
+}
+.container .cardWrapper {
+  display: flex;
+  gap: 2rem;
+}
+.container .cardWrapper .card {
+  width: 20rem;
+  height: 20rem;
+  background-color: aquamarine;
+}
+.container .cardContainer {
+  display: flex;
+  gap: 2rem;
+}
+.container .cardContainer .cardGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container .cardContainer .cardGroup .card {
+  width: 20rem;
+  height: 20rem;
+  background-color: aquamarine;
+}
+.container .cardContainer .cardHolder {
+  width: 42rem;
+  height: 42rem;
+  background-color: aquamarine;
+}/*# sourceMappingURL=Main.module.css.map */
