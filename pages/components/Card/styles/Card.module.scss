@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 21rem;
+  height: 21rem;
+  border: 0.1rem solid black;
+  border-radius: 0.6rem;
+  padding: 1rem;
+
+  img {
+    object-fit: cover;
+    height: 11rem;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 0.9rem;
+  }
+}

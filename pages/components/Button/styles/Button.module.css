@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.8rem;
+  font-weight: 600;
+  height: 3.8rem;
+  width: 3.8rem;
+  background: transparent;
+  border: none;
+  padding: 0.2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}/*# sourceMappingURL=Button.module.css.map */

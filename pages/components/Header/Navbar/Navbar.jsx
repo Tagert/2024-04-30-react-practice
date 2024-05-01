@@ -1,9 +1,9 @@
 import styles from "./styles/Navbar.module.css";
 
-const Navbar = () => {
+const Navbar = ({ logo }) => {
   return (
     <navbar className={styles.container}>
-      <h1>STUDIO</h1>
+      <h1>{logo}</h1>
 
       <nav className={styles.navList}>
         <a href="#">About</a>

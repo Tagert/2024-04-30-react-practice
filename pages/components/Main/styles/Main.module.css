@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   padding: 2rem 3rem 2rem 3rem;
@@ -10,30 +10,71 @@
   background-size: cover;
 }
 .container .description {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   max-width: 40.5rem;
+  z-index: 10;
 }
 .container .description h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 3.8rem;
+}
+.container .description h2 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.8rem;
+  font-weight: 600;
+  height: 3.8rem;
+  width: 3.8rem;
+  background: transparent;
+  border: none;
+  padding: 0.2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 .container .description p {
   text-align: justify;
   line-height: 1.5;
 }
 .container .cardWrapper {
+  position: relative;
   display: flex;
   gap: 2rem;
+  z-index: 10;
 }
 .container .cardWrapper .card {
-  width: 20rem;
-  height: 20rem;
-  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 21rem;
+  height: 21rem;
+  border: 0.1rem solid black;
+  border-radius: 0.6rem;
+  padding: 1rem;
+}
+.container .cardWrapper .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 11rem;
+}
+.container .cardWrapper .card h4 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.container .cardWrapper .card p {
+  text-align: justify;
+  font-size: 0.9rem;
 }
 .container .cardContainer {
+  position: relative;
   display: flex;
   gap: 2rem;
+  z-index: 10;
 }
 .container .cardContainer .cardGroup {
   display: flex;
@@ -41,12 +82,31 @@
   gap: 2rem;
 }
 .container .cardContainer .cardGroup .card {
-  width: 20rem;
-  height: 20rem;
+  width: 21rem;
+  height: 21rem;
   background-color: aquamarine;
 }
 .container .cardContainer .cardHolder {
-  width: 42rem;
-  height: 42rem;
-  background-color: aquamarine;
+  width: 44rem;
+  height: 44rem;
+  border: 0.1rem solid black;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+.container .cardContainer .cardHolder img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .additionalBg {
+  position: absolute;
+  top: 8rem;
+  right: 10rem;
+  min-height: 153vh;
+  width: 40%;
+  background-color: #efc502;
+  border-radius: 0.6rem;
+  opacity: 0.15;
+  z-index: 1;
 }/*# sourceMappingURL=Main.module.css.map */

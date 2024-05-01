@@ -1,10 +1,17 @@
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
+import { useState } from "react";
 import { Header } from "./components/Header/Header.jsx";
 import { Main } from "./components/Main/Main.jsx";
-import { Footer } from "./components/Footer/Footer.jsx";
+import { Footer } from "./components/Footer/styles/Footer.jsx";
+
+// Inspiration template Url - https://nicepage.com/website-templates/preview/building-and-architecture-109231?device=desktop
 
 const Home = () => {
+  const [copyright, setCopyright] = useState(
+    "©2024 STUDIO. ALL RIGHTS RESERVED"
+  );
+
   return (
     <div className={styles.container}>
       <Head>
@@ -18,7 +25,7 @@ const Home = () => {
 
       <Main />
 
-      <Footer />
+      <Footer text={copyright} />
     </div>
   );
 };
