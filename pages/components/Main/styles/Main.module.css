@@ -47,29 +47,6 @@
   gap: 2rem;
   z-index: 10;
 }
-.container .cardWrapper .card {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  width: 21rem;
-  height: 21rem;
-  border: 0.1rem solid black;
-  border-radius: 0.6rem;
-  padding: 1rem;
-}
-.container .cardWrapper .card img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 11rem;
-}
-.container .cardWrapper .card h4 {
-  text-align: center;
-  font-size: 1.4rem;
-}
-.container .cardWrapper .card p {
-  text-align: justify;
-  font-size: 0.9rem;
-}
 .container .cardContainer {
   position: relative;
   display: flex;
@@ -80,11 +57,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-.container .cardContainer .cardGroup .card {
-  width: 21rem;
-  height: 21rem;
-  background-color: aquamarine;
 }
 .container .cardContainer .cardHolder {
   width: 44rem;
@@ -102,9 +74,9 @@
 .container .additionalBg {
   position: absolute;
   top: 8rem;
-  right: 10rem;
+  left: 54%;
   min-height: 153vh;
-  width: 40%;
+  width: 35rem;
   background-color: #efc502;
   border-radius: 0.6rem;
   opacity: 0.15;

@@ -27,6 +27,46 @@
   font-weight: 500;
   color: black;
 }
-.container .navList svg {
+@media screen and (max-width: 950px) {
+  .container .navList a {
+    display: none;
+  }
+}
+.container .navList button {
+  all: unset;
+  display: none;
+}
+@media screen and (max-width: 950px) {
+  .container .navList button {
+    display: inline-block;
+  }
+}
+.container .navList button svg {
+  cursor: pointer;
+}
+.container .mobileMenu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 2rem);
+}
+@media screen and (max-width: 950px) {
+  .container .mobileMenu {
+    display: flex;
+  }
+}
+.container .mobileMenu nav {
+  position: relative;
+  z-index: 10;
+}
+.container .mobileMenu nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style-type: none;
+}
+.container .mobileMenu nav ul li a {
+  font-weight: 500;
+  color: black;
   cursor: pointer;
 }/*# sourceMappingURL=Navbar.module.css.map */
