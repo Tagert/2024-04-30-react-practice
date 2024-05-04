@@ -7,18 +7,21 @@ import { useState } from "react";
 const Main = () => {
   const [cards, setCards] = useState([
     {
+      id: 1,
       imgUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZaHSKllluFQfJlRAtrm8NqqzT33ddkjT0o2-rxx7-sg&s",
       title: "Idea",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maiores accusamus autem rem harum minus expedita nemo unde!",
     },
     {
+      id: 2,
       imgUrl:
         "https://cdn.dribbble.com/users/258975/screenshots/2874402/scene-visual-prototype-2_.jpg",
       title: "Drafting",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem deserunt dolore voluptatem mollitia cumque.",
     },
     {
+      id: 3,
       imgUrl:
         "https://chisellabs.com/glossary/wp-content/uploads/2021/07/What-is-a-Prototype.jpeg",
       title: "Creation",
@@ -28,12 +31,14 @@ const Main = () => {
 
   const [cardsAdditional, setCardsAdditional] = useState([
     {
+      id: 4,
       imgUrl:
         "https://miro.medium.com/v2/resize:fit:1200/1*5fB_KSkm9_dqdfSNTJY5lQ.png",
       title: "Prototype",
       text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, est. Accusamus veritatis nesciunt minus a, sit exercitationem!",
     },
     {
+      id: 5,
       imgUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC8sI3rfAIHGKPJbLB1sFuJrUhuewypPIeQeojo9tCIg&s",
       title: "Launch",
@@ -76,6 +81,7 @@ const Main = () => {
         {cards.map((card) => {
           return (
             <Card
+              key={card.id}
               imgUrl={card.imgUrl}
               title={card.title}
               text={card.text}
@@ -92,6 +98,7 @@ const Main = () => {
           {cardsAdditional.map((card) => {
             return (
               <Card
+                key={card.id}
                 imgUrl={card.imgUrl}
                 title={card.title}
                 text={card.text}
@@ -107,7 +114,6 @@ const Main = () => {
           <img
             src="https://lawkm.com/wp-content/uploads/2017/08/shutterstock_440496118.jpg"
             alt=""
-            srcset=""
           />
         </div>
       </div>
